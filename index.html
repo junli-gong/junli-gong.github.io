@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Junli Gong</title>
+<meta name="description" content="Junli Gong — MS CS student at Northeastern University (Seattle). Efficient ML systems, LLM inference, multimodal perception, embodied agents." />
+<meta name="theme-color" content="#ffffff" />
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=1" />
+</head>
+
+<body>
+<script>document.documentElement.className += " js";</script>
+<div class="field" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="page">
+
+  <!-- ══════ MASTHEAD ══════ -->
+  <header class="masthead rise">
+    <div class="portrait"><img src="photo.jpg" alt="Junli Gong" onerror="this.onerror=null;this.src='photo-placeholder.svg'" /></div>
+    <div>
+      <h1 class="name">Junli Gong</h1>
+      <p class="affil">
+        <span class="school">Northeastern University</span><br />
+        <a href="mailto:gong.jun@northeastern.edu">gong.jun@northeastern.edu</a>
+      </p>
+      <nav class="contact">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="https://scholar.google.com/citations?user=ivUsbMMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/junli-gong" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══════ BIO ══════ -->
+  <section class="band band--open rise rise-2">
+    <div class="band-label"></div>
+    <div class="band-body bio">
+      <p>
+        I am an <strong>MS student in Computer Science</strong> at
+        <strong>Northeastern University</strong> (Khoury College, Seattle), graduating in
+        December 2026. I received my BSc (Honours) in Computer Science and Technology from
+        <strong>Beijing Normal-Hong Kong Baptist University</strong> (BNBU, formerly UIC).
+      </p>
+      <p>
+        I work on multimodal perception and embodied agents with
+        <a href="https://staff.uic.edu.cn/wfsu/en">Prof. Weifeng Su</a> at BNBU, and on
+        Mixture-of-Experts inference with
+        <a href="https://www.khoury.northeastern.edu/people/yifan-hu/">Prof. Yifan Hu</a> at Khoury.
+        In summer 2025 I was a research intern at <strong>Pazhou Lab</strong> / South China University of
+        Technology, advised by <a href="https://www2.scut.edu.cn/cs/2017/0629/c22284a328108/page.htm">Prof. Lu Lu</a>,
+        writing Tensor Core GEMM kernels for Transformer workloads. In summer 2026 I was an
+        <strong>AI Infra intern at iFLYTEK</strong>, adapting speech models to heterogeneous domestic AI accelerators.
+      </p>
+      <p>
+        Earlier, I worked on clustered federated learning for IoT with
+        <a href="https://faculty.bnu.edu.cn/guojianxiong/zh_CN/index.htm">Prof. Jianxiong Guo</a>
+        at Beijing Normal University, Zhuhai.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════ RESEARCH INTERESTS ══════ -->
+  <section class="band">
+    <div class="band-label">Research<br />Interest</div>
+    <div class="band-body">
+
+      <p class="statement">
+        I am interested in <em>making machine learning systems efficient</em> — from GPU kernels
+        to inference runtimes — and in multimodal models that perceive, reason, and act.
+      </p>
+      <p class="statement-sub">
+        Much of my work sits where the two meet: where does the time go when a large model runs,
+        and how far can a system see, remember, and decide with what it has.
+      </p>
+
+      <div class="keys">
+        <span>LLM Inference Systems</span>
+        <span>GPU Kernels</span>
+        <span>Multimodal Perception</span>
+        <span>Embodied Agents</span>
+      </div>
+
+      <div class="themes">
+      <span class="spine" aria-hidden="true"><i class="spine-fill"></i></span>
+
+      <div class="theme">
+        <div class="theme-name">LLM Inference Systems</div>
+        <p class="theme-note">
+          Serving large models is often bound by communication rather than compute. I study
+          how routing and scheduling decisions can be predicted early enough to overlap
+          communication with computation, without changing what the model outputs.
+        </p>
+        <div class="theme-refs">Speculative expert pre-dispatch for MoE inference (in progress)</div>
+      </div>
+
+      <div class="theme">
+        <div class="theme-name">GPU Kernels &amp; Heterogeneous Accelerators</div>
+        <p class="theme-note">
+          What a hand-written kernel can still win against a vendor library, and what breaks
+          when a model moves from one accelerator to another.
+        </p>
+        <div class="theme-refs">Tensor Core HGEMM vs. cuBLAS (Pazhou Lab)<span class="dot">·</span>Cross-accelerator model adaptation (iFLYTEK)</div>
+      </div>
+
+      <div class="theme">
+        <div class="theme-name">Multimodal Perception</div>
+        <p class="theme-note">
+          Fusing what different sensors see — thermal and visible, multiple medical modalities —
+          into something a downstream model can act on, and judging fusion quality the way people do.
+        </p>
+        <div class="theme-refs">
+          <a href="https://arxiv.org/abs/2605.06010">FusionProxy</a><span class="dot">·</span><a href="https://arxiv.org/abs/2605.06969">FuScore</a><span class="dot">·</span><a href="https://arxiv.org/abs/2409.10328">Fuse4Seg</a>
+        </div>
+      </div>
+
+      <div class="theme">
+        <div class="theme-name">Embodied Agents</div>
+        <p class="theme-note">
+          Whether a model can reason from an intent to the part of the scene that affords it,
+          and how an agent's experience becomes part of its parameters rather than a buffer it looks up.
+        </p>
+        <div class="theme-refs">
+          <a href="https://arxiv.org/abs/2605.27764">SegWorld</a><span class="dot">·</span><a href="https://arxiv.org/abs/2605.27762">PEAM</a>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════ PUBLICATIONS ══════ -->
+  <section class="band">
+    <div class="band-label">Publications</div>
+    <div class="band-body">
+
+      <div class="pubgroup">
+        <div class="pubgroup-title">Peer-reviewed</div>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="SegWorld.png" alt="SegWorld" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Can Segmentation Models Understand the World? Proactive Affordance Reasoning via Vision-Grounded Chain-of-Thought</h3>
+            <p class="pub-authors">
+              Yuchen Guo*, <span class="me">Junli Gong</span>*, Hongmin Cai, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Empirical Methods in Natural Language Processing (EMNLP), 2026</span>
+              <span>Main Conference</span>
+              <span class="pub-links"><a href="https://arxiv.org/abs/2605.27764">Paper</a></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="PEAM.png" alt="PEAM" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">PEAM: Parametric Embodied Agent Memory for Continual Skill Learning via Internalization of Experience in Minecraft</h3>
+            <p class="pub-authors">
+              Yuchen Guo, <span class="me">Junli Gong</span>, Weicheng Wang, Hongmin Cai, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Empirical Methods in Natural Language Processing (EMNLP), 2026</span>
+              <span>Findings</span>
+              <span class="pub-links"><a href="https://arxiv.org/abs/2605.27762">Paper</a></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="fusionproxy.png" alt="FusionProxy" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Adding Thermal Awareness to Visual Systems in Real-Time via Distilled Diffusion Models</h3>
+            <p class="pub-authors">
+              Yuchen Guo, <span class="me">Junli Gong</span>, Wenjun Dong, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">CVPR Workshop on World Models Meet Active Sensing (WMAS), 2026</span>
+              <span>Extended version under review at NeurIPS 2026</span>
+              <span class="pub-links"><a href="https://arxiv.org/abs/2605.06010">Paper</a></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="thumb-wasa.svg" alt="Clustered federated learning" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Enhancing Federated Learning in IoT Through Dynamic Spectral Clustering</h3>
+            <p class="pub-authors">
+              Changyu Zheng*, <span class="me">Junli Gong</span>*, Jianxiong Guo, Zhiqing Tang, Tian Wang
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Wireless Artificial Intelligent Computing Systems and Applications (WASA), 2025</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="thumb-asiajcis.svg" alt="Malicious traffic detection" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">An Effective Feature Selection Algorithm for Machine Learning-based Malicious Traffic Detection</h3>
+            <p class="pub-authors">
+              Chao Fei, Nian Xia, Pang-Wei Tsai, Yang Lu, Xiaonan Pan, <span class="me">Junli Gong</span>
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Asia Joint Conference on Information Security (AsiaJCIS), 2024</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pubgroup">
+        <div class="pubgroup-title">Preprints &amp; under review</div>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="FuScore.png" alt="FuScore" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Bringing Multimodal Large Language Models to Infrared-Visible Image Fusion Quality Assessment</h3>
+            <p class="pub-authors">
+              Yuchen Guo*, <span class="me">Junli Gong</span>*, Yao Lu, Xintong Xu, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Under review, NeurIPS 2026</span>
+              <span class="pub-links"><a href="https://arxiv.org/abs/2605.06969">Paper</a></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="Lumi.png" alt="LumiVideo" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">LumiVideo: An Intelligent Agentic System for Video Color Grading</h3>
+            <p class="pub-authors">
+              Yuchen Guo, <span class="me">Junli Gong</span>, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Under review, AAAI 2027</span>
+              <span class="pub-links">
+                <a href="https://eurekaarrow.github.io/LumiVideo/">Project</a>
+                <a href="https://arxiv.org/abs/2604.02409">Paper</a>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-fig"><img src="seg1.png" alt="Fuse4Seg" /></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Fuse4Seg: Image Fusion for Multi-Modal Medical Segmentation via Bi-level Optimization</h3>
+            <p class="pub-authors">
+              Yuchen Guo, <span class="me">Junli Gong</span>, Yiu-ming Cheung, Weifeng Su
+            </p>
+            <div class="pub-meta">
+              <span class="pub-venue">Under review, AAAI 2027</span>
+              <span class="pub-links"><a href="https://arxiv.org/abs/2409.10328">Paper</a></span>
+            </div>
+          </div>
+        </article>
+
+        <p class="pub-foot">* denotes equal contribution.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════ CODA ══════ -->
+  <section class="band coda">
+    <div class="band-label"></div>
+    <div class="band-body">
+      <blockquote>
+        The purpose of computing is insight, not numbers.
+        <cite>&mdash;&nbsp;Richard Hamming</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>© <span id="y"></span> Junli Gong</span>
+    <span>Seattle, Washington</span>
+  </footer>
+
+</div>
+
+<script>
+var yEl = document.getElementById('y');
+if (yEl) yEl.textContent = new Date().getFullYear();
+
+/* the four themes light up along one spine as you read past them */
+(function(){
+  var spine = document.querySelector('.spine');
+  var fill  = document.querySelector('.spine-fill');
+  var items = [].slice.call(document.querySelectorAll('.theme'));
+  if (!spine || !fill) return;
+  var queued = false;
+
+  function light(){
+    var line = innerHeight * 0.70;
+    var box  = spine.getBoundingClientRect();
+    fill.style.height = Math.max(0, Math.min(box.height, line - box.top)).toFixed(1) + 'px';
+    for (var i = 0; i < items.length; i++){
+      var t = items[i].getBoundingClientRect().top + 14;
+      items[i].classList.toggle('lit', t <= line);
+    }
+    queued = false;
+  }
+  function ping(){ if (!queued){ queued = true; requestAnimationFrame(light); } }
+
+  addEventListener('scroll', ping, {passive:true});
+  addEventListener('resize', ping, {passive:true});
+  addEventListener('load',   ping);
+  light();
+})();
+</script>
+<script src="field.js?v=1"></script>
+</body>
+</html>

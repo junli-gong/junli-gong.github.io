@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 136" width="208" height="136">
+  <rect width="208" height="136" fill="#faf5f6"/>
+  <g stroke="#e6c4cb" stroke-width="1" fill="none">
+    <line x1="20" y1="110" x2="188" y2="110"/>
+    <line x1="20" y1="110" x2="20" y2="26"/>
+  </g>
+  <g fill="#e6c4cb">
+    <rect x="32" y="64" width="9" height="46"/><rect x="46" y="80" width="9" height="30"/>
+    <rect x="60" y="38" width="9" height="72"/><rect x="74" y="90" width="9" height="20"/>
+    <rect x="88" y="70" width="9" height="40"/><rect x="102" y="96" width="9" height="14"/>
+    <rect x="116" y="54" width="9" height="56"/><rect x="130" y="100" width="9" height="10"/>
+    <rect x="144" y="84" width="9" height="26"/><rect x="158" y="92" width="9" height="18"/>
+    <rect x="172" y="104" width="9" height="6"/>
+  </g>
+  <g fill="#8a1c2e">
+    <rect x="60" y="38" width="9" height="72"/><rect x="116" y="54" width="9" height="56"/><rect x="32" y="64" width="9" height="46"/>
+  </g>
+  <path d="M20 46 L60 46 L60 54 L116 54 L116 62 L188 62" fill="none" stroke="#b0455a" stroke-width="1.2" stroke-dasharray="3 3"/>
+</svg>
